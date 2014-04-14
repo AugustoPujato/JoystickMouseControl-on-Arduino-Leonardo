@@ -80,7 +80,7 @@ void loop() {
 
   // if the mouse control state is active, move the mouse:
   if (mouseIsActive) {
-    Mouse.move(xReading, -yReading, 0); //Remplazado yReading por -yReading
+    Mouse.move(xReading, -yReading, 0); //Remplazado yReading por -yReading (yReading replacement -yReading)
   }  
 
   // read the mouse button and click or not click:

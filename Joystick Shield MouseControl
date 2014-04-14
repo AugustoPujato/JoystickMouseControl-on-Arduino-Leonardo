@@ -38,10 +38,10 @@
 // set pin numbers for switch, joystick axes, and LED:
 const int switchPin = 5;      // switch to turn on and off mouse control
 const int mouseButton = 7;    // input pin for the mouse pushButton
-const int mouseButtonR = 6; //clic derecho
+const int mouseButtonR = 6; //clic derecho (Click Right)
 const int xAxis = A1;         // joystick X axis  
-const int yAxis = A0;         // joystick Y axis
-const int ledPin = 13;         // Mouse control LED (pin 5 remplazado por pin13)
+const int yAxis = A0;         // joystick Y axis 
+const int ledPin = 13;         // Mouse control LED (pin 5 remplazado por pin 13)(pin 5 replacement pin 13)
 
 // parameters for reading the joystick:
 int range = 12;               // output range of X or Y movement
@@ -64,7 +64,7 @@ void loop() {
   int switchState = digitalRead(switchPin);
   // if it's changed and it's high, toggle the mouse state:
   if (switchState != lastSwitchState) {
-    if (switchState == LOW) //HIGH reemplazo por LOW
+    if (switchState == LOW) //HIGH reemplazado por LOW (HIGH replacement LOW)
     {
       mouseIsActive = !mouseIsActive;
       // turn on LED to indicate mouse state:
@@ -85,7 +85,7 @@ void loop() {
 
   // read the mouse button and click or not click:
   // if the mouse button is pressed:
-  if (digitalRead(mouseButton) == LOW)//HIGH reemplazo por LOW
+  if (digitalRead(mouseButton) == LOW)//HIGH reemplazado por LOW (HIGH replacement LOW)
   {
     // if the mouse is not pressed, press it:
     if (!Mouse.isPressed(MOUSE_LEFT)) {
